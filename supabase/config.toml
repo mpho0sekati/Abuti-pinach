@@ -1,0 +1,34 @@
+project_id = "qpzukqzqvmydhjwmmkeg"
+
+[functions.ussd-callback]
+verify_jwt = false
+
+[functions.voice-callback]
+verify_jwt = false
+
+[functions.sms-callback]
+verify_jwt = false
+
+[functions.at-outbound]
+verify_jwt = false
+
+[functions.elevenlabs-tts]
+verify_jwt = false
+
+[functions.chat]
+verify_jwt = false
+
+[functions.farm-plans]
+verify_jwt = false
+
+[functions.send-farm-sms]
+verify_jwt = false
+
+[functions.twilio-sms]
+verify_jwt = false
+
+[functions.twilio-voice]
+verify_jwt = false
+
+[functions.twilio-number]
+verify_jwt = false

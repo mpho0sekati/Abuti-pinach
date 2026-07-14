@@ -1,0 +1,30 @@
+{
+  "name": "Composite Risk Score",
+  "formula": "w1*anomaly + w2*pest_risk + w3*yield_deficit + w4*price_volatility",
+  "weights": {
+    "anomaly_severity": 0.25,
+    "pest_risk": 0.3,
+    "yield_deficit": 0.25,
+    "price_volatility": 0.2
+  },
+  "thresholds": {
+    "low": [
+      0,
+      33
+    ],
+    "medium": [
+      33,
+      66
+    ],
+    "high": [
+      66,
+      100
+    ]
+  },
+  "outputs": {
+    "overall_risk_score": "float 0-100",
+    "risk_level": "string: low/medium/high",
+    "contributing_factors": "list of main drivers",
+    "recommendations": "list of actions"
+  }
+}
